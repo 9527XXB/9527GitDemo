@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 将需要Spring创建对象的类，首先在配置文件中进行说明 -->
+	<bean id="enHellWorld" class="cn.ekgc.myspring.day01.EnHelloWorld"></bean>
+	<bean id="zhHellWorld" class="cn.ekgc.myspring.day01.ZhHelloWorld"></bean>
+	<bean id="showHello" class="cn.ekgc.myspring.day01.ShowHello">
+		<!-- 如果在创建该对象的时候，需要向这个对象的某些属性设定值，那么可以依赖注入 -->
+		<property name="helloWorld" ref="zhHellWorld"></property>
+	</bean>
+</beans>

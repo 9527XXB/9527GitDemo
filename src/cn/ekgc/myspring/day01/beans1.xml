@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 只需要让Spring来进行管理的类注册在该配置文件中即可
+	<bean id="helloWorld" class="cn.ekgc.myspring.day01.HelloWorld"/> -->
+</beans>
